@@ -8,12 +8,54 @@
         body{
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
+
+        label {
+            cursor: pointer;
+            display: block;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
     <form action="#" method="get" target="_blank" autocomplete="off">
+        <p> O meu formulário </p>
         <p>
-            
+            <label for="nome"> Nome: </label>
+            <input type="text" name="nome" id="nome" placeholder="Seu nome">
+        </p>
+        <p>
+            <label for="dev"> Sou um dev </label>
+            <input type="checkbox" name="dev" id="dev">
+        </p>
+        <p>
+            <label for="genero">Genero</label>
+            <input type="radio" name="genero" id="masculino">
+            <input type="radio" name="genero" id="feminimo">
+            <input type="radio" name="genero" id="outros">
+        </p>
+        <p>
+            <label for="data"> Data: </label>
+            <input type="date" name="data" id="data">
+        </p>
+        <p>
+            <label for="data2"> Data: </label>
+            <input type="datetime-local" name="data2" id="data2">
+        </p>
+        <p>
+            <label for="cor"> Cor: </label>
+            <input type="color" name="cor" id="cor" value="#ffffff">
+        </p>
+        <p>
+            <label for="data3"> Data: </label>
+            <input type="time" name="data3" id="data3">
+        </p>
+        <p>
+            <label for="foto"> Foto: </label>
+            <input type="file" name="foto" id="foto" accept="image/*">
+        </p>
+                <p>
+            <button type="submit"> Enviar </button>
+            <button type="reset"> Reset  </button>
         </p>
     </form>
 </body>
