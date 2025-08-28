@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.pai {
+    width: 100vw;
+    height: 100vh;
+    background: yellow;
+}
+
+p {
+    font-size: 2rem;
+}
+
+.color-1 {
+    background: blue;
+}
+
+.color-2 {
+    background: violet;
+}

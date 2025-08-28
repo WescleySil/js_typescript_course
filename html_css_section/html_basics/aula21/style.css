@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.screen-1 {
+    width: 100vw;
+    height: 100vh;
+}
+
+.screen-2 {
+    width: 100vw;
+    height: 100vh;
+}
+
+.screen-3 {
+    width: 100vw;
+    height: 100vh;
+}
+
+.menu {
+    background-color: #111;
+    height: 70px;
+    width: 100vw;
+    font-size: 20px;
+    position: fixed;
+}
+
+.menu a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(250, 235, 215);
+}
+
+.menu a:hover {
+    color: rgb(220, 200, 170)
+}
+
+.grid {
+    padding: 15px;
+}
+
+.grid::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid .col{
+    width: 33.33%;
+    height: 300px;
+    float: left;
+    padding: 15px;
+}
+
+.grid .col-content {
+    background: #ff0000;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 320px) {
+    .grid .col {
+        width: 100%;
+    }
+}
+
+@media (min-width: 320.98px) and (max-width: 767.98px) {
+    .grid .col {
+        width: 50%;
+    }
+}
