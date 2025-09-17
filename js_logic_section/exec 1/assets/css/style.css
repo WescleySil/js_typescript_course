@@ -81,3 +81,8 @@ th, td {
   margin-top: 20px;
   background-color: var(--rigth-output);
 }
+
+.caixa-resultado p {
+  padding: 0 0 0 10px;
+  font-weight: bold;
+}
